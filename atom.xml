@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://supermastersky.com/"/>
   <updated>2017-03-28T11:11:51.688Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://supermastersky.com/</id>
   
   <author>
     <name>John Doe</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/03/28/hello-world/"/>
-    <id>http://yoursite.com/2017/03/28/hello-world/</id>
+    <link href="http://supermastersky.com/2017/03/28/hello-world/"/>
+    <id>http://supermastersky.com/2017/03/28/hello-world/</id>
     <published>2017-03-28T11:11:51.688Z</published>
     <updated>2017-03-28T11:11:51.688Z</updated>
     
