@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://supermastersky.com/"/>
-  <updated>2017-03-29T13:47:57.578Z</updated>
+  <updated>2017-03-29T13:56:21.280Z</updated>
   <id>http://supermastersky.com/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AVT Vimba与OpenCV环境配置</title>
+    <link href="http://supermastersky.com/2017/03/29/AVT-Vimba%E4%B8%8EOpenCV%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://supermastersky.com/2017/03/29/AVT-Vimba与OpenCV环境配置/</id>
+    <published>2017-03-29T13:51:06.000Z</published>
+    <updated>2017-03-29T13:56:21.280Z</updated>
+    
+    <content type="html"><![CDATA[<p>去年写的一篇文字，记录windows7x64环境下，大恒AVT相机的环境配置过程。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;去年写的一篇文字，记录windows7x64环境下，大恒AVT相机的环境配置过程。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>一个开始</title>
