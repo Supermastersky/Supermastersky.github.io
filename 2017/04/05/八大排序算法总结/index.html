@@ -1,28 +1,334 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>MasterSky</title>
+<!doctype html>
+
+
+
   
-  <link href="/atom.xml" rel="self"/>
+
+
+<html class="theme-next mist use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <link href="http://supermastersky.com/"/>
-  <updated>2017-04-05T03:34:44.362Z</updated>
-  <id>http://supermastersky.com/</id>
   
-  <author>
-    <name>John Doe</name>
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://supermastersky.com/2017/04/05/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/"/>
-    <id>http://supermastersky.com/2017/04/05/八大排序算法总结/</id>
-    <published>2017-04-05T03:33:06.094Z</published>
-    <updated>2017-04-05T03:34:44.362Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="八大排序算法总结"><a href="#八大排序算法总结" class="headerlink" title="八大排序算法总结"></a>八大排序算法总结</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1、什么是排序"><a href="#1、什么是排序" class="headerlink" title="1、什么是排序"></a>1、什么是排序</h3><p>所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。</p>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="MasterSky" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="八大排序算法总结一、概述1、什么是排序所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。
+2、排序的分类内排序和外排序按排序数据元素的的位置，可将排序分为内排序与外排序两类。-内排序是指被排序的数据元素全部存放在计算机的内存之中，并且在内存中调整数据元素的相对位置。-外排序是指在排序的过程中，数据元素主要存放在外存储器中，借助于内存储器逐步调整数据元素之间的相对位置。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MasterSky">
+<meta property="og:url" content="http://supermastersky.com/2017/04/05/八大排序算法总结/index.html">
+<meta property="og:site_name" content="MasterSky">
+<meta property="og:description" content="八大排序算法总结一、概述1、什么是排序所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。
+2、排序的分类内排序和外排序按排序数据元素的的位置，可将排序分为内排序与外排序两类。-内排序是指被排序的数据元素全部存放在计算机的内存之中，并且在内存中调整数据元素的相对位置。-外排序是指在排序的过程中，数据元素主要存放在外存储器中，借助于内存储器逐步调整数据元素之间的相对位置。">
+<meta property="og:updated_time" content="2017-04-05T03:34:44.362Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MasterSky">
+<meta name="twitter:description" content="八大排序算法总结一、概述1、什么是排序所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。
+2、排序的分类内排序和外排序按排序数据元素的的位置，可将排序分为内排序与外排序两类。-内排序是指被排序的数据元素全部存放在计算机的内存之中，并且在内存中调整数据元素的相对位置。-外排序是指在排序的过程中，数据元素主要存放在外存储器中，借助于内存储器逐步调整数据元素之间的相对位置。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://supermastersky.com/2017/04/05/八大排序算法总结/"/>
+
+
+
+
+
+  <title>  | MasterSky </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">MasterSky</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://supermastersky.com/2017/04/05/八大排序算法总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MasterSky">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-05T11:33:06+08:00">
+                2017-04-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="八大排序算法总结"><a href="#八大排序算法总结" class="headerlink" title="八大排序算法总结"></a>八大排序算法总结</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1、什么是排序"><a href="#1、什么是排序" class="headerlink" title="1、什么是排序"></a>1、什么是排序</h3><p>所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。</p>
 <h3 id="2、排序的分类"><a href="#2、排序的分类" class="headerlink" title="2、排序的分类"></a>2、排序的分类</h3><h4 id="内排序和外排序"><a href="#内排序和外排序" class="headerlink" title="内排序和外排序"></a>内排序和外排序</h4><p>按排序数据元素的的位置，可将排序分为内排序与外排序两类。<br>-内排序是指被排序的数据元素全部存放在计算机的内存之中，并且在内存中调整数据元素的相对位置。<br>-外排序是指在排序的过程中，数据元素主要存放在外存储器中，借助于内存储器逐步调整数据元素之间的相对位置。通常在排序数据较大情况下，内存不足以放入所有数据进行处理，此时需考虑进行外排序。<br>通常所说的【八大排序】均指内部排序（在内存中进行的排序）。</p>
 <h4 id="稳定排序和非稳定排序"><a href="#稳定排序和非稳定排序" class="headerlink" title="稳定排序和非稳定排序"></a>稳定排序和非稳定排序</h4><p>稳定与非稳定排序：假定在待排序的集合中存在多个【关键字值相同】的数据元素。如果经过排序后，【这些数据元素的相对次序保持不变，则称为稳定排序；否则称为不稳定排序。】</p>
 <p>先讨论内部排序。<br>按内部排序过程中的工作量进行排序：<br>（1）简单的。时间复杂度O(N2)<br>（2）先进的。时间复杂度O(NlogN)<br>（3）基数排序。时间复杂度O(D.N)</p>
@@ -81,81 +387,339 @@
 <p>d、【关于时间复杂度】<br>除基数排序外，其它方法都是基于“比较关键字”进行排序的排序方法，可以证明，这类排序法可能达到的最快的时间复杂度为O(nlogn)。(基数排序不是基于“比较关键字”的排序方法,所以它不受这个限制)。</p>
 <p>7、外排序（对于磁带/磁盘上的数据）<br>模型：减少外存储器的读写。最常用的是【归并排序】（只需访问序列中第一个元素，适合于顺序文件）。<br>阶段：<br>a、预处理：根据内存大小将文件分批读入，用各种内排序算法排序，形成有序片段<br>【最简单的方法是按照内存的容量尽可能多地读入数据记录，然后在内存进行排序，排序的结果写入文件，形成一个已排序片段。</p>
 <p>每次读入的记录数越小，形成的初始的已排序片段越多。而已排序片段越多，归并的次数也越多。】<br>【置换选择】：可在只能容纳p个记录的内存中，生成平均长度2p的初始已排序片段。<br>（用优先队列等）<br>-归并：逐步归并成有序文件。<br>可进行2路归并、多路归并等。略。</p>
-]]></content>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/29/AVT-Vimba与OpenCV环境配置/" rel="next" title="AVT Vimba与OpenCV环境配置">
+                <i class="fa fa-chevron-left"></i> AVT Vimba与OpenCV环境配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
-    <summary type="html">
-    
-      &lt;h1 id=&quot;八大排序算法总结&quot;&gt;&lt;a href=&quot;#八大排序算法总结&quot; class=&quot;headerlink&quot; title=&quot;八大排序算法总结&quot;&gt;&lt;/a&gt;八大排序算法总结&lt;/h1&gt;&lt;h2 id=&quot;一、概述&quot;&gt;&lt;a href=&quot;#一、概述&quot; class=&quot;headerlink&quot; 
-    
-    </summary>
-    
-    
-  </entry>
+  </div>
+
+
+        </div>
+        
+          
   
-  <entry>
-    <title>AVT Vimba与OpenCV环境配置</title>
-    <link href="http://supermastersky.com/2017/03/29/AVT-Vimba%E4%B8%8EOpenCV%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    <id>http://supermastersky.com/2017/03/29/AVT-Vimba与OpenCV环境配置/</id>
-    <published>2017-03-29T13:51:06.000Z</published>
-    <updated>2017-03-29T13:56:21.280Z</updated>
-    
-    <content type="html"><![CDATA[<p>去年写的一篇文字，记录windows7x64环境下，大恒AVT相机的环境配置过程。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;去年写的一篇文字，记录windows7x64环境下，大恒AVT相机的环境配置过程。&lt;/p&gt;
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="John Doe" />
+          <p class="site-author-name" itemprop="name">John Doe</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#八大排序算法总结"><span class="nav-number">1.</span> <span class="nav-text">八大排序算法总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、概述"><span class="nav-number">1.1.</span> <span class="nav-text">一、概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、什么是排序"><span class="nav-number">1.1.1.</span> <span class="nav-text">1、什么是排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、排序的分类"><span class="nav-number">1.1.2.</span> <span class="nav-text">2、排序的分类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#内排序和外排序"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">内排序和外排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#稳定排序和非稳定排序"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">稳定排序和非稳定排序</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
 
     
-    </summary>
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
-    
-  </entry>
+
+  </div>
+
   
-  <entry>
-    <title>一个开始</title>
-    <link href="http://supermastersky.com/2017/03/29/%E4%B8%80%E4%B8%AA%E5%BC%80%E5%A7%8B/"/>
-    <id>http://supermastersky.com/2017/03/29/一个开始/</id>
-    <published>2017-03-29T13:43:32.000Z</published>
-    <updated>2017-03-29T13:47:57.578Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="千古江山，英雄无觅，孙大师处"><a href="#千古江山，英雄无觅，孙大师处" class="headerlink" title="千古江山，英雄无觅，孙大师处"></a>千古江山，英雄无觅，孙大师处</h2><p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊<br>孙大师很厉害</p>
-<h1 id="但是马总不知道要高到哪里去了"><a href="#但是马总不知道要高到哪里去了" class="headerlink" title="但是马总不知道要高到哪里去了"></a>但是马总不知道要高到哪里去了</h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;千古江山，英雄无觅，孙大师处&quot;&gt;&lt;a href=&quot;#千古江山，英雄无觅，孙大师处&quot; class=&quot;headerlink&quot; title=&quot;千古江山，英雄无觅，孙大师处&quot;&gt;&lt;/a&gt;千古江山，英雄无觅，孙大师处&lt;/h2&gt;&lt;p&gt;啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
-    
-    </summary>
-    
-    
-  </entry>
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
   
-  <entry>
-    <title>Hello World</title>
-    <link href="http://supermastersky.com/2017/03/28/hello-world/"/>
-    <id>http://supermastersky.com/2017/03/28/hello-world/</id>
-    <published>2017-03-28T11:11:51.688Z</published>
-    <updated>2017-03-28T11:11:51.688Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-    
-  </entry>
+
+
+
+
+
+
   
-</feed>
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
