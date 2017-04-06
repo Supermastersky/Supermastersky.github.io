@@ -13,15 +13,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[一个开始]]></title>
-      <url>http://supermastersky.com/2017/03/29/%E4%B8%80%E4%B8%AA%E5%BC%80%E5%A7%8B/</url>
-      <content type="html"><![CDATA[<h2 id="千古江山，英雄无觅，孙大师处"><a href="#千古江山，英雄无觅，孙大师处" class="headerlink" title="千古江山，英雄无觅，孙大师处"></a>千古江山，英雄无觅，孙大师处</h2><p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊<br>孙大师很厉害</p>
-<h1 id="但是马总不知道要高到哪里去了"><a href="#但是马总不知道要高到哪里去了" class="headerlink" title="但是马总不知道要高到哪里去了"></a>但是马总不知道要高到哪里去了</h1>]]></content>
-      
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>http://supermastersky.com/2017/03/28/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
@@ -40,8 +31,9 @@
     
     <entry>
       <title><![CDATA[八大排序算法总结]]></title>
-      <url>http://supermastersky.com/2017/02/15/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
-      <content type="html"><![CDATA[<h1 id="八大排序算法总结"><a href="#八大排序算法总结" class="headerlink" title="八大排序算法总结"></a>八大排序算法总结</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1、什么是排序"><a href="#1、什么是排序" class="headerlink" title="1、什么是排序"></a>1、什么是排序</h3><p>所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。</p>
+      <url>http://supermastersky.com/2017/02/07/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93/</url>
+      <content type="html"><![CDATA[<p>过年在家闲暇时间较多，整理一下八大排序算法。</p>
+<h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1、什么是排序"><a href="#1、什么是排序" class="headerlink" title="1、什么是排序"></a>1、什么是排序</h3><p>所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。</p>
 <h3 id="2、排序的分类"><a href="#2、排序的分类" class="headerlink" title="2、排序的分类"></a>2、排序的分类</h3><h4 id="（1）内排序和外排序"><a href="#（1）内排序和外排序" class="headerlink" title="（1）内排序和外排序"></a>（1）内排序和外排序</h4><p>按排序数据元素的的位置，可将排序分为内排序与外排序两类。</p>
 <h5 id="外排序"><a href="#外排序" class="headerlink" title="外排序"></a>外排序</h5><p>外排序是指在排序的过程中，数据元素主要存放在外存储器中，借助于内存储器逐步调整数据元素之间的相对位置。通常在排序数据较大情况下，内存不足以放入所有数据进行处理，此时需考虑进行外排序。<br>外排序效率提高依赖于减少外存储器的读写。最常用的是【归并排序】（只需访问序列中第一个元素，适合于顺序文件）。<br>通过进行2路归并、多路归并等方式，进行逐步归并。本文仅以此简略介绍。</p>
 <h5 id="内排序"><a href="#内排序" class="headerlink" title="内排序"></a>内排序</h5><p>内排序是指被排序的数据元素全部存放在计算机的内存之中，并且在内存中调整数据元素的相对位置。</p>
@@ -94,6 +86,15 @@
 <h4 id="（1）稳定："><a href="#（1）稳定：" class="headerlink" title="（1）稳定："></a>（1）稳定：</h4><p>-直接插入排序（折半插入）<br>-直接选择排序（树形选择排序）<br>-冒泡排序<br>-归并排序<br>-基数排序</p>
 <h4 id="（2）不稳定："><a href="#（2）不稳定：" class="headerlink" title="（2）不稳定："></a>（2）不稳定：</h4><p>-希尔排序<br>-堆排序<br>-快速排序</p>
 <h3 id="4、关于“比较关键字”原理排序的时间复杂度"><a href="#4、关于“比较关键字”原理排序的时间复杂度" class="headerlink" title="4、关于“比较关键字”原理排序的时间复杂度"></a>4、关于“比较关键字”原理排序的时间复杂度</h3><p>除基数排序外，其它方法都是基于“比较关键字”进行排序的排序方法，可以证明，这类排序法可能达到的最快的时间复杂度为O(nlogn)。(基数排序不是基于“比较关键字”的排序方法,所以它不受这个限制)</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[一个开始]]></title>
+      <url>http://supermastersky.com/2016/09/24/%E4%B8%80%E4%B8%AA%E5%BC%80%E5%A7%8B/</url>
+      <content type="html"><![CDATA[<h3 id="开篇记"><a href="#开篇记" class="headerlink" title="开篇记"></a>开篇记</h3><p>习惯性在开始的时候写些什么，却又不知从何说起。<br>日记自2015年8月起，已经记了一年有余，总字数超过了十万。日记是日记，并没有公开的计划，即使有也是不知多久以后了。<br>总要有些公开的文字，与或多或少、常见或未见的朋友们，面谈或神交。<br>开博客的举措曾进行过数次。最早的QQ空间，交互做得相当不错，而由于qq的渐用渐少而废弃。本科时用人人网，尽心写过不少日志，而本科毕业后删的删屏蔽的屏蔽，留下的固然是自己认为的精品，却不知未来看到会不会觉得是年少轻狂的绝妙讽刺。<br>现在的日常交往，有微信朋友圈，却在某种程度上只是固化自己的朋友圈子；而自身在行业内，多多少少了解，自己所看到的新闻，绝大多数是大数据环境下别人认为自己所想看到的。真正的世界观能扩展多少，不得而知。<br>田师兄推荐了github，也许可以用来展示自己的些许编程思路，与网上各位大牛分享代码，有所困惑也许还能收获指点，算是意外惊喜吧。<br>确实，今天光是调试环境就用了不少时间，希望能展示一些自己的想法，还请各路大神不吝赐教吧。<br>大家都有自己的选择与道路，我也应时刻保持进步。</p>
 ]]></content>
       
         
