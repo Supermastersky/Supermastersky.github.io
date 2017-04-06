@@ -196,7 +196,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -206,7 +206,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -286,7 +286,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-04T18:43:32+08:00">
                 2017-03-04
@@ -328,11 +328,11 @@
           
             <p>最近复习数据结构与算法，归纳整理一下八大排序算法。</p>
 <h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1、什么是排序"><a href="#1、什么是排序" class="headerlink" title="1、什么是排序"></a>1、什么是排序</h3><p>所谓排序，就是把集合中的数据元素，按它们的关键字非递减或非递增序，排成一个序列。</p>
-<h3 id="2、排序的分类"><a href="#2、排序的分类" class="headerlink" title="2、排序的分类"></a>2、排序的分类</h3><h4 id="（1）内排序和外排序"><a href="#（1）内排序和外排序" class="headerlink" title="（1）内排序和外排序"></a>（1）内排序和外排序</h4><p>按排序数据元素的的位置，可将排序分为内排序与外排序两类。<br>&lt;–! more–&gt;</p>
+<h3 id="2、排序的分类"><a href="#2、排序的分类" class="headerlink" title="2、排序的分类"></a>2、排序的分类</h3><h4 id="（1）内排序和外排序"><a href="#（1）内排序和外排序" class="headerlink" title="（1）内排序和外排序"></a>（1）内排序和外排序</h4><p>按排序数据元素的的位置，可将排序分为内排序与外排序两类。</p>
 <h5 id="外排序"><a href="#外排序" class="headerlink" title="外排序"></a>外排序</h5><p>外排序是指在排序的过程中，数据元素主要存放在外存储器中，借助于内存储器逐步调整数据元素之间的相对位置。通常在排序数据较大情况下，内存不足以放入所有数据进行处理，此时需考虑进行外排序。<br>外排序效率提高依赖于减少外存储器的读写。最常用的是【归并排序】（只需访问序列中第一个元素，适合于顺序文件）。<br>通过进行2路归并、多路归并等方式，进行逐步归并。本文仅以此简略介绍。</p>
 <h5 id="内排序"><a href="#内排序" class="headerlink" title="内排序"></a>内排序</h5><p>内排序是指被排序的数据元素全部存放在计算机的内存之中，并且在内存中调整数据元素的相对位置。</p>
 <h5 id="通常所说的【八大排序】均指内部排序（在内存中进行的排序）。"><a href="#通常所说的【八大排序】均指内部排序（在内存中进行的排序）。" class="headerlink" title="通常所说的【八大排序】均指内部排序（在内存中进行的排序）。"></a>通常所说的【八大排序】均指内部排序（在内存中进行的排序）。</h5><h4 id="（2）稳定排序和非稳定排序"><a href="#（2）稳定排序和非稳定排序" class="headerlink" title="（2）稳定排序和非稳定排序"></a>（2）稳定排序和非稳定排序</h4><p>稳定与非稳定排序：假定在待排序的集合中存在多个【关键字值相同】的数据元素。如果经过排序后，【这些数据元素的相对次序保持不变，则称为稳定排序；否则称为不稳定排序。】</p>
-<h3 id="3、排序的时间复杂度"><a href="#3、排序的时间复杂度" class="headerlink" title="3、排序的时间复杂度"></a>3、排序的时间复杂度</h3><p>由于外部排序的单次磁盘读写操作耗时较多，本文暂不进行探讨，对内部排序的时间复杂度进行分类。<br>按内部排序过程中的工作量进行分类，可大致分为3类。<br>（1）简单的。时间复杂度O(N2)<br>（2）先进的。时间复杂度O(NlogN)<br>（3）基数排序。时间复杂度O(D.N)</p>
+<h3 id="3、排序的时间复杂度"><a href="#3、排序的时间复杂度" class="headerlink" title="3、排序的时间复杂度"></a>3、排序的时间复杂度</h3><p>&lt;–! more–&gt;<br>由于外部排序的单次磁盘读写操作耗时较多，本文暂不进行探讨，对内部排序的时间复杂度进行分类。<br>按内部排序过程中的工作量进行分类，可大致分为3类。<br>（1）简单的。时间复杂度O(N2)<br>（2）先进的。时间复杂度O(NlogN)<br>（3）基数排序。时间复杂度O(D.N)</p>
 <h3 id="4、两种排序基本操作"><a href="#4、两种排序基本操作" class="headerlink" title="4、两种排序基本操作"></a>4、两种排序基本操作</h3><h4 id="（1）关键字比较"><a href="#（1）关键字比较" class="headerlink" title="（1）关键字比较"></a>（1）关键字比较</h4><p>关键字比较对大多数排序方法来说是必要的。</p>
 <h4 id="（2）记录移动"><a href="#（2）记录移动" class="headerlink" title="（2）记录移动"></a>（2）记录移动</h4><p>可通过改变记录的存储方式来予以避免。<br>通常有3种记录存储方式。<br>存储方式1：顺序存储结构<br>存储方式2：静态链表。关系次序由指针指示，排序时不移动记录，仅修改指针。<br>存储方式3：地址排序。排序过程中不移动记录，移动地址向量中的地址。排序结束后再按照地址向量值调整位置。</p>
 <h2 id="二、八大排序介绍"><a href="#二、八大排序介绍" class="headerlink" title="二、八大排序介绍"></a>二、八大排序介绍</h2><h4 id="可分为插入排序、选择排序、交换排序、归并排序、基数排序5类。"><a href="#可分为插入排序、选择排序、交换排序、归并排序、基数排序5类。" class="headerlink" title="可分为插入排序、选择排序、交换排序、归并排序、基数排序5类。"></a>可分为插入排序、选择排序、交换排序、归并排序、基数排序5类。</h4><h3 id="1、插入排序"><a href="#1、插入排序" class="headerlink" title="1、插入排序"></a>1、插入排序</h3><p>【原理】：首先将由第一个数据元素组成的序列看成是有序的，然后将剩余的n-1个元素依次插入到前面的已排好序的子序列中去，使得每次插入后的子序列也是有序的。<br>【类比成打牌，右手牌原数量为n，需全部转移到左手且有序。左手的牌数量从0-n，每增长一张牌后都是有序的】</p>
@@ -460,7 +460,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-07T17:03:57+08:00">
                 2017-02-07
@@ -499,17 +499,15 @@
 
       
         
-          
-            <p>由于实验室项目需求，需在windows7x64环境下，使用一款大恒AVT相机采集图像并进行web编程等后续处理。环境的配置过程较为繁杂，过年期间，进行一下内容整理。<br>&lt;–! more–&gt;</p>
-<h3 id="安装目录："><a href="#安装目录：" class="headerlink" title="安装目录："></a>安装目录：</h3><h5 id="1、Anaconda2-4-2-0-Windows-x86-64（自带python2-7及scipy、numpy等库）"><a href="#1、Anaconda2-4-2-0-Windows-x86-64（自带python2-7及scipy、numpy等库）" class="headerlink" title="1、Anaconda2-4.2.0-Windows-x86_64（自带python2.7及scipy、numpy等库）"></a>1、Anaconda2-4.2.0-Windows-x86_64（自带python2.7及scipy、numpy等库）</h5><h5 id="2、pycharm-professional-2016-2-3"><a href="#2、pycharm-professional-2016-2-3" class="headerlink" title="2、pycharm-professional-2016.2.3"></a>2、pycharm-professional-2016.2.3</h5><h5 id="3、Opencv3-1-0"><a href="#3、Opencv3-1-0" class="headerlink" title="3、Opencv3.1.0"></a>3、Opencv3.1.0</h5><h5 id="4、opencv-python-3-1-0-cp27-cp27m-win-amd64（opencv3-1-0环境库）"><a href="#4、opencv-python-3-1-0-cp27-cp27m-win-amd64（opencv3-1-0环境库）" class="headerlink" title="4、opencv_python-3.1.0-cp27-cp27m-win_amd64（opencv3.1.0环境库）"></a>4、opencv_python-3.1.0-cp27-cp27m-win_amd64（opencv3.1.0环境库）</h5><h5 id="5、AVT-vimba-1-3以上版本（内附2-0）"><a href="#5、AVT-vimba-1-3以上版本（内附2-0）" class="headerlink" title="5、AVT_vimba 1.3以上版本（内附2.0）"></a>5、AVT_vimba 1.3以上版本（内附2.0）</h5><h5 id="6、pymba-master"><a href="#6、pymba-master" class="headerlink" title="6、pymba-master"></a>6、pymba-master</h5><h4 id="搭建环境：Windows7x64-Python2-7-OpenCV3-1-0-AVT-vimba2-0"><a href="#搭建环境：Windows7x64-Python2-7-OpenCV3-1-0-AVT-vimba2-0" class="headerlink" title="搭建环境：Windows7x64 + Python2.7 + OpenCV3.1.0+AVT vimba2.0"></a>搭建环境：Windows7x64 + Python2.7 + OpenCV3.1.0+AVT vimba2.0</h4><h3 id="一、Python2-7"><a href="#一、Python2-7" class="headerlink" title="一、Python2.7"></a>一、Python2.7</h3><h4 id="1、python2-7软件安装（安装Anaconda2-4-2-0-Windows-x86-64）"><a href="#1、python2-7软件安装（安装Anaconda2-4-2-0-Windows-x86-64）" class="headerlink" title="1、python2.7软件安装（安装Anaconda2-4.2.0-Windows-x86_64）"></a>1、python2.7软件安装（安装Anaconda2-4.2.0-Windows-x86_64）</h4><p>在python2系列中，Python2.7的软件支持效果较好，特别是python2.7.4和2.7.10，这两个子版本的应用非常广泛。可直接于Python官网直接下载安装，再安装scipy、numpy等各类支持库。<br>而由于Anaconda包含python7.7.10和各类库，可直接安装使用，故选择安装Anaconda。直接打开安装程序，按默认设置进行安装即可，注意记录安装路径。</p>
-<h4 id="2、编译器pucharm安装（pycharm-professional-2016-2-3）"><a href="#2、编译器pucharm安装（pycharm-professional-2016-2-3）" class="headerlink" title="2、编译器pucharm安装（pycharm-professional-2016.2.3）"></a>2、编译器pucharm安装（pycharm-professional-2016.2.3）</h4><p>安装python编译器pycharm。直接双击打开安装程序，按默认设置进行安装即可。</p>
-<h3 id="二、OpenCV3-1-0"><a href="#二、OpenCV3-1-0" class="headerlink" title="二、OpenCV3.1.0"></a>二、OpenCV3.1.0</h3><h4 id="1、opencv3-1-0安装"><a href="#1、opencv3-1-0安装" class="headerlink" title="1、opencv3.1.0安装"></a>1、opencv3.1.0安装</h4><p>安装包在OpenCV官网下载可得，安装过程其实只是简单的解压缩，同样需注意记录安装路径。<br>安装完毕后，需进行环境变量配置。将opencv\build\x64\vc12\bin加入到计算机path内。具体操作为，我的电脑（右键）——属性——高级系统设置——环境变量——Path（双击），添加环境变量。<br>由于使用Python API，再把opencv\build\python\2.7\x64目录下的cv2.pyd文件，复制到前述Anaconda文件对应的Lib\site-packages目录下，完成系统注册表配置。这样就完成了基本的python与opencv链接。</p>
-<h4 id="2、opencv-python链接库安装（opencv-python-3-1-0-cp27-cp27m-win-amd64）"><a href="#2、opencv-python链接库安装（opencv-python-3-1-0-cp27-cp27m-win-amd64）" class="headerlink" title="2、opencv-python链接库安装（opencv_python-3.1.0-cp27-cp27m-win_amd64）"></a>2、opencv-python链接库安装（opencv_python-3.1.0-cp27-cp27m-win_amd64）</h4><p>这是opencv3.1.0环境库。由于在实际使用时，发现64位系统在仅安装python和opencv时，会存在无法实现调用的问题，故安装此链接库。<br>安装方式为，进入windows命令行界面，在切换到此文件的目录下后，运行pip install 命令，输入语句pip install opencv_python-3.1.0-cp27-cp27m-win_amd64.whl，以进行链接库安装。</p>
-<h3 id="三、AVT-Vimba"><a href="#三、AVT-Vimba" class="headerlink" title="三、AVT Vimba"></a>三、AVT Vimba</h3><h4 id="1、AVT-vimba-1-3以上版本（使用2-0）安装"><a href="#1、AVT-vimba-1-3以上版本（使用2-0）安装" class="headerlink" title="1、AVT_vimba 1.3以上版本（使用2.0）安装"></a>1、AVT_vimba 1.3以上版本（使用2.0）安装</h4><p>这是大恒AVT相机的官方驱动程序，可于AVT官网下载并安装。我所安装的是2.0版本。</p>
-<h4 id="2、pymba-master安装"><a href="#2、pymba-master安装" class="headerlink" title="2、pymba-master安装"></a>2、pymba-master安装</h4><p>官方仅提供了C/C++的API，因此想使用Python的同学通常可使用ctypes，或使用pymba。<br>在田家田师兄的推荐下，我使用pymba进行python调用。这里要感谢伟大的Github，给我们节约了无数的时间【pymba的原github地址赋予本文最后】。<br>这里，将pymba安装到第一步，已安装的Anaconda\Lib\site-packages目录下。<br>这里安装过程同pip，下载解压到某个文件夹后，使用cmd shell，cd切换到相应目录，输入python setup.py install。如图所示。<br><img src="D:/blog/source/_posts/photoes/1.png" alt="1"><br>完成pymba安装后，需更改pymba默认索引的VimbaC.dll的路径。具体更改方法为找到/pymba/vimbadll.py将其中的Line13和Line16更改为自己VimbaC.dll的路径，修改为return r’（vimba安装路径）\Vimba_2.0\VimbaC\Bin\Win64\VimbaC.dll’，完成安装。我的如下图所示：<br><img src="D:/blog/source/_posts/photoes/2.png" alt="2"><br>重新编译后，就大功告成了~~</p>
-<h5 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h5><p>1、田家田师兄博客<a href="http://onlytjt.github.io/2015/11/17/OpenCV_Vimba/" target="_blank" rel="external">http://onlytjt.github.io/2015/11/17/OpenCV_Vimba/</a><br>2、pymba的Github地址，<a href="https://github.com/morefigs/pymba" target="_blank" rel="external">https://github.com/morefigs/pymba</a></p>
-<h6 id="孙可扬sky"><a href="#孙可扬sky" class="headerlink" title="孙可扬sky"></a>孙可扬sky</h6><h6 id="2017-2-7"><a href="#2017-2-7" class="headerlink" title="2017.2.7"></a>2017.2.7</h6>
-          
+          <p>由于实验室项目需求，需在windows7x64环境下，使用一款大恒AVT相机采集图像并进行web编程等后续处理。环境的配置过程较为繁杂，过年期间，进行一下内容整理。</p>
+<h3 id="安装目录："><a href="#安装目录：" class="headerlink" title="安装目录："></a>安装目录：</h3><h5 id="1、Anaconda2-4-2-0-Windows-x86-64（自带python2-7及scipy、numpy等库）"><a href="#1、Anaconda2-4-2-0-Windows-x86-64（自带python2-7及scipy、numpy等库）" class="headerlink" title="1、Anaconda2-4.2.0-Windows-x86_64（自带python2.7及scipy、numpy等库）"></a>1、Anaconda2-4.2.0-Windows-x86_64（自带python2.7及scipy、numpy等库）</h5><h5 id="2、pycharm-professional-2016-2-3"><a href="#2、pycharm-professional-2016-2-3" class="headerlink" title="2、pycharm-professional-2016.2.3"></a>2、pycharm-professional-2016.2.3</h5><h5 id="3、Opencv3-1-0"><a href="#3、Opencv3-1-0" class="headerlink" title="3、Opencv3.1.0"></a>3、Opencv3.1.0</h5><h5 id="4、opencv-python-3-1-0-cp27-cp27m-win-amd64（opencv3-1-0环境库）"><a href="#4、opencv-python-3-1-0-cp27-cp27m-win-amd64（opencv3-1-0环境库）" class="headerlink" title="4、opencv_python-3.1.0-cp27-cp27m-win_amd64（opencv3.1.0环境库）"></a>4、opencv_python-3.1.0-cp27-cp27m-win_amd64（opencv3.1.0环境库）</h5><h5 id="5、AVT-vimba-1-3以上版本（内附2-0）"><a href="#5、AVT-vimba-1-3以上版本（内附2-0）" class="headerlink" title="5、AVT_vimba 1.3以上版本（内附2.0）"></a>5、AVT_vimba 1.3以上版本（内附2.0）</h5><h5 id="6、pymba-master"><a href="#6、pymba-master" class="headerlink" title="6、pymba-master"></a>6、pymba-master</h5><h4 id="搭建环境：Windows7x64-Python2-7-OpenCV3-1-0-AVT-vimba2-0"><a href="#搭建环境：Windows7x64-Python2-7-OpenCV3-1-0-AVT-vimba2-0" class="headerlink" title="搭建环境：Windows7x64 + Python2.7 + OpenCV3.1.0+AVT vimba2.0"></a>搭建环境：Windows7x64 + Python2.7 + OpenCV3.1.0+AVT vimba2.0</h4>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/02/07/AVT-Vimba与OpenCV环境配置/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -588,7 +586,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-24T21:36:42+08:00">
                 2016-09-24
@@ -709,7 +707,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -770,7 +768,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
